@@ -16,3 +16,8 @@
     display: table;
     clear: both;
 }
+
+h7 {
+  color:darkslateblue;
+  font-weight: bold;
+}
