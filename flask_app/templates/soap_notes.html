@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="/muscleology/flask_app/static/css/style.css">
 </head>
 <body>
+
+
     <div class="container">
         <!-- Nav Bar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -26,180 +28,277 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Who We Are</a>
+                        <a class="nav-link" href="home.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </nav>
         <!-- Nav Bar -->
-    <!-- 
-        <div class="row">
-            <div class="column" >
-            <h2></h2>
-            <img src="/muscleology/flask_app/static/images/Athena.jpg" class="rounded mx-auto d-block rounded-circle" alt="athena pic" width="300">
-            </div>
-            <div class="column">
 
-            </div>
-        </div> -->
 
         <img src="/muscleology/flask_app/static/images/blue-gold.jpg" class="rounded mx-auto d-block rounded-circle" alt="Muscleology logo" width="200" height="200">
 
-        <h3>SOAP NOTES</h3>
-        <br>
 
-        <!-- Intentisty of pain radio-->
-        <h7>Intensity of pain: (choose one)</h7>
-        <div class="container-intensity">
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="ip1" id="inlineRadio1" value="option1">
-                <label class="form-check-label" for="inlineRadio1">1</label>
+        <div class="soap-container">
+            <h3>SOAP NOTES</h3>
+            <br>
+
+
+            <!-- Intentisty of pain radio-->
+
+            <h7>Intensity of pain: (choose one)</h7>
+            <div class="container-intensity">
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                    <input class="form-check-input" type="radio" name="intensity_radio" id="inlineRadio1" value="1">
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                    <input class="form-check-input" type="radio" name="intensity_radio" id="inlineRadio2" value="2">
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="inlineRadio3">3</label>
+                    <input class="form-check-input" type="radio" name="intensity_radio" id="inlineRadio3" value="3">
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="inlineRadio4">4</label>
+                    <input class="form-check-input" type="radio" name="intensity_radio" id="inlineRadio4" value="4">
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="inlineRadio5">5</label>
+                    <input class="form-check-input" type="radio" name="intensity_radio" id="inlineRadio5" value="5">
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="inlineRadio6">6</label>
+                    <input class="form-check-input" type="radio" name="intensity_radio" id="inlineRadio6" value="6">
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="inlineRadio7">7</label>
+                    <input class="form-check-input" type="radio" name="intensity_radio" id="inlineRadio7" value="7">
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="inlineRadio8">8</label>
+                    <input class="form-check-input" type="radio" name="intensity_radio" id="inlineRadio8" value="8">
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="intensity_radio" id="inlineRadio9" value="8">
+                    <label class="form-check-label" for="inlineRadio9">9</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="intensity_radio" id="inlineRadio10" value="10">
+                    <label class="form-check-label" for="inlineRadio10">10</label>
+                </div>
             </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="ip2" id="inlineRadio2" value="option2">
-                <label class="form-check-label" for="inlineRadio2">2</label>
+            <br>
+
+
+
+            <!-- Sensation of Pain checkboxes -->
+            <h7>Sensation of Pain:</h7>
+            <div class="container-sensation">
+                <div class="row row-cols-2">
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckDefault"> Dull  </label>
+                        <input class="form-check-input" type="radio" name="sensation_radio" value="" id="flexCheckDefault">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckChecked"> Cold </label>
+                        <input class="form-check-input" type="radio" name="sensation_radio" value="" id="flexCheckChecked">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckChecked"> Sharp </label>
+                        <input class="form-check-input" type="radio" name="sensation_radio" value="" id="flexCheckChecked">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckChecked"> Burning </label>
+                        <input class="form-check-input" type="radio" name="sensation_radio" value="" id="flexCheckChecked">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckChecked"> Tender </label>
+                        <input class="form-check-input" type="radio" name="sensation_radio" value="" id="flexCheckChecked">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckChecked"> Itching </label>
+                        <input class="form-check-input" type="radio" name="sensation_radio" value="" id="flexCheckChecked">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckChecked"> Tingling </label>
+                        <input class="form-check-input" type="radio" name="sensation_radio" value="" id="flexCheckChecked">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckChecked"> Cramping </label>
+                        <input class="form-check-input" type="radio" name="sensation_radio" value="" id="flexCheckChecked">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckChecked"> Cold </label>
+                        <input class="form-check-input" type="radio" name="sensation_radio" value="" id="flexCheckChecked">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckChecked"> Burning </label>
+                        <input class="form-check-input" type="radio" name="sensation_radio" value="" id="flexCheckChecked">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckChecked"> Aching </label>
+                        <input class="form-check-input" type="radio" name="sensation_radio" value="" id="flexCheckChecked">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckChecked"> Sensitive </label>
+                        <input class="form-check-input" type="radio" name="sensation_radio" value="" id="flexCheckChecked">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckChecked"> Radiating </label>
+                        <input class="form-check-input" type="radio" name="sensation_radio" value="" id="flexCheckChecked">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckChecked"> Shooting </label>
+                        <input class="form-check-input" type="radio" name="sensation_radio" value="" id="flexCheckChecked">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckChecked"> Pressure </label>
+                        <input class="form-check-input" type="radio" name="sensation_radio" value="" id="flexCheckChecked">
+                    </div>
+                    <p></p>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckChecked"> Other </label>
+                        <input class="form-check-input" type="radio" name="sensation_radio" value="" id="flexCheckChecked">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                    </div>
+                </div>   
             </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="ip3" id="inlineRadio3" value="option3">
-                <label class="form-check-label" for="inlineRadio3">3</label>
+            <br>
+
+
+
+            <h7>Time pattern of pain:</h7>
+            <div class="container-pattern">
+                <div class="time-pattern">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="constant" value="constant">
+                        <label class="form-check-label" for="constant">Constant (pain doe not change)</label>
+                    </div>
+                </div>
+                <div class="time-pattern">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="intermittent" value="intermittent">
+                        <label class="form-check-label" for="intermittent">Intermittent (intensity doesn't change out comes & goes</label>
+                    </div>
+                </div>
+                <div class="time-pattern">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="variable" value="variable">
+                        <label class="form-check-label" for="variable">Variable (intensity changes throughout the day</label>
+                    </div>
+                </div>
             </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="ip4" id="inlineRadio4" value="option4">
-                <label class="form-check-label" for="inlineRadio4">4</label>
+            <br>
+
+
+            <h7>When did the pain start?</h7>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+            <br>
+
+
+            <h7>Was there a specific incident that cause this pain?</h7>
+            <div class="container-incident">
+                <div class="row row-cols-2">
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckDefault">Motor vehicle accident</label>
+                        <input class="form-check-input" type="radio" name="incident_radio" value="" id="flexCheckDefault">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckDefault">Fall</label>
+                        <input class="form-check-input" type="radio" name="incident_radio" value="" id="flexCheckDefault">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckDefault">Slept Funny</label>
+                        <input class="form-check-input" type="radio" name="incident_radio" value="" id="flexCheckDefault">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckDefault">Work related</label>
+                        <input class="form-check-input" type="radio" name="incident_radio" value="" id="flexCheckDefault">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckDefault">Sports/excercise</label>
+                        <input class="form-check-input" type="radio" name="incident_radio" value="" id="flexCheckDefault">
+                    </div>
+                    <p></p>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckChecked"> Other </label>
+                        <input class="form-check-input" type="radio" name="incident_radio" value="" id="flexCheckChecked">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                    </div>            
+                </div>
             </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="ip5" id="inlineRadio5" value="option5">
-                <label class="form-check-label" for="inlineRadio5">5</label>
+            <br>
+
+
+            <h7>Does this pain prevent you from participating in...</h7>
+            <div class="container-participation">
+                <div class="row row-cols-2">
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckDefault">Work</label>
+                        <input class="form-check-input" type="radio" name="participating_radio" value="" id="flexCheckDefault">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckDefault">Leisure activities</label>
+                        <input class="form-check-input" type="radio" name="participating_radio" value="" id="flexCheckDefault">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckDefault">Sports / excercise</label>
+                        <input class="form-check-input" type="radio" name="participating_radio" value="" id="flexCheckDefault">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckDefault">Sleep</label>
+                        <input class="form-check-input" type="radio" name="participating_radio" value="" id="flexCheckDefault">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckChecked"> Other </label>
+                        <input class="form-check-input" type="radio" name="participating_radio" value="" id="flexCheckChecked">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                    </div>            
+                </div>
             </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="ip6" id="inlineRadio6" value="option6">
-                <label class="form-check-label" for="inlineRadio6">6</label>
+            <br>
+
+
+            <h7>Have you seen other practitioners about this issue?</h7>957
+            <div class="container-sensation">
+                <div class="row row-cols-2">
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckDefault">Massage therapist</label>
+                        <input class="form-check-input" type="radio" name="participating_radio" value="" id="flexCheckDefault">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckDefault">Physical therapist</label>
+                        <input class="form-check-input" type="radio" name="participating_radio" value="" id="flexCheckDefault">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckDefault">Chiropractor</label>
+                        <input class="form-check-input" type="radio" name="participating_radio" value="" id="flexCheckDefault">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckDefault">Physician</label>
+                        <input class="form-check-input" type="radio" name="participating_radio" value="" id="flexCheckDefault">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckChecked"> Other </label>
+                        <input class="form-check-input" type="radio" name="participating_radio" value="" id="flexCheckChecked">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                    </div>            
+                </div>
             </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="ip7" id="inlineRadio7" value="option7">
-                <label class="form-check-label" for="inlineRadio7">7</label>
+
+
+            <!-- Notes for Customer -->
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"><h7>Customer Notes</h7></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="ip8" id="inlineRadio8" value="option8">
-                <label class="form-check-label" for="inlineRadio8">8</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="ip9" id="inlineRadio9" value="option9">
-                <label class="form-check-label" for="inlineRadio9">9</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="ip10" id="inlineRadio10" value="option10">
-                <label class="form-check-label" for="inlineRadio10">10</label>
-            </div>
+
         </div>
-        <br>
-
-        <!-- Sensation of Pain checkboxes -->
-        <h7>Sensation of Pain:</h7>
-        <div class="container-sensation">
-            <div class="row row-cols-2">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault"> Dull  </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked"> Cold </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked"> Sharp </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked"> Burning </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked"> Tender </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked"> Itching </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked"> Tingling </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked"> Cramping </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked"> Cold </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked"> Burning </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked"> Aching </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked"> Sensitive </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked"> Radiating </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked"> Shooting </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked"> Pressure </label>
-                </div>
-                <p></p>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked"> Other </label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-                </div>
-            </div>   
-        </div>
-        <br>
-
-
-        <h7>Time pattern of pain:</h7>
-        <div class="container-pattern">
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="constant" value="constant">
-                <label class="form-check-label" for="constant">Constant (pain doe not change)</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="intermittent" value="intermittent">
-                <label class="form-check-label" for="intermittent">Intermittent (intensity doesn't change out comes & goes</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="variable" value="variable">
-                <label class="form-check-label" for="variable">Variable (intensity changes throughout the day</label>
-            </div>
-        </div>
-
-        <input type="radio" name="editList" value="always">Always
-        <input type="radio" name="editList" value="never">Never
-        <input type="radio" name="editList" value="costChange">Cost Change
-        <br>
-
-        <!-- Notes for Customer -->
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label"><h7>Customer Notes</h7></label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-
-
 
 
 

@@ -1,5 +1,6 @@
 from flask import flask, render_template, request, redirect, session
 app = flask(__name__)
+
 app.secret_key = "therapy!!!"
 
 @app.route('/')
